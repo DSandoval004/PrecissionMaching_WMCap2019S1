@@ -1,0 +1,88 @@
+/*
+       _ _                      
+   ___(_) |_ ___    ___ ___ ___ 
+  / __| | __/ _ \  / __/ __/ __|
+  \__ \ | ||  __/ | (__\__ \__ \
+  |___/_|\__\___|  \___|___/___/
+                                
+ 
+  CSS that is used accross the whole site
+  Beach Bar Family, DINEngschrift ,Nunito_Sans
+*/
+/* Imports Fonts */
+@import url("https://use.typekit.net/dug4pdc.css");
+
+/* HTML and Body */
+html {
+    width: 100%;
+    min-height: 100%;
+
+    background: #e5e5e5;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 90%;
+
+    box-shadow: 0 0 5px;
+    background: #fafafa;
+
+    font-family: utopia-std-display, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* NavBar */
+nav#topNavBar {
+    position: relative;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 46px;
+    width: 100vw;
+    right: 50%;
+    left: 50%;
+
+    background: #f59232;
+}
+
+head nav ul#topNavBarUl {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+li.topNavBarItems {
+    float: left;
+}
+
+ul#topNavBarUl li a {
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    padding: 14px 16px;
+    margin-top: 1px;
+    min-width: 80px;
+    display: block;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    border-radius: 1px;
+    color: #262626;
+    font-family: jaf-bernina-sans-condensed, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+ul#topNavBarUl li a:hover {
+    background-color: #262626;
+    color: #fafafa;
+}
+
+a.curentPage {
+    background-color: #f7d162;
+}
