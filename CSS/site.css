@@ -6,34 +6,35 @@
   |___/_|\__\___|  \___|___/___/
                                 
  
-  CSS that is used accross the whole site
-  Beach Bar Family, DINEngschrift ,Nunito_Sans
+  CSS that is used across the whole site
+  Beach Bar Family, DINEngschrift , Nunito_Sans
 */
 /* Imports Fonts */
+/* This sets the @import rule of a url from "https://use.typekit.net/dug4pdc.css"  */
 @import url("https://use.typekit.net/dug4pdc.css");
 
 /* HTML and Body */
+/* This sets the HTML element with a width of 100 percent, min-height of 100 percent, and a background of #e5e5e5  */
 html {
     width: 100%;
     min-height: 100%;
-
     background: #e5e5e5;
 }
 
+/* This sets the body element with a margin of 0 and auto, min height of 100 percent, a width of 90 percent, a box shadow of 0, 0, and 5 pixels, background of #fafafa, a font family of utopia std display and serif, a font weight of 400, and a font style of normal */
 body {
     margin: 0 auto;
     min-height: 100%;
     width: 90%;
-
     box-shadow: 0 0 5px;
     background: #fafafa;
-
     font-family: utopia-std-display, serif;
     font-weight: 400;
     font-style: normal;
 }
 
 /* NavBar */
+/* This sets the nav element with a id of topNavBar with a position of relative, a margin left of negative 50 view width, a margin right of negative  */
 nav#topNavBar {
     position: relative;
     margin-left: -50vw;
@@ -83,6 +84,6 @@ ul#topNavBarUl li a:hover {
     color: #fafafa;
 }
 
-a.curentPage {
+a.currentPage {
     background-color: #f7d162;
 }
