@@ -1,3 +1,5 @@
+// DVARG: description
+var imageIndex = Math.floor(Math.random() * 11);
 // DDOES:
 window.addEventListener('load', function () {
     slideShow()
@@ -6,25 +8,32 @@ window.addEventListener('load', function () {
 // DFUNC: The slideShow function
 function slideShow() {
     // DVARL: description
-    var slideShowItems = document.getElementById('slideShow').children,
-        imageIndex = Math.floor(Math.random() * 11);
+    var slideShowItems = document.getElementById('slideShow').children;
+    // DDOES:
+    document.getElementById('leftArrowSS').addEventListener('click', function () {
+        imageIndex -= 2;
+        changeSlide();
+    });
+    document.getElementById('rightArrowSS').addEventListener('click', changeSlide)
     // DFUNC: The changeSlide function
-    function changeSlide(imageIndex) {
+    function changeSlide() {
         // DVARS: 
-        imageIndex++;
         var slideNumber;
-        if (imageIndex <= 9) {
+        if (imageIndex > 12) {
+            slideNumber = '01';
+            imageIndex = 1;
+        } else if (imageIndex > 9) {
+            slideNumber = imageIndex;
+        } else if (imageIndex < 1) {
+            imageIndex = 12;
+            slideNumber = 12;
+        } else if (imageIndex <= 9) {
             slideNumber = `0${imageIndex}`;
         }
-        if (imageIndex > 9) {
-            slideNumber = imageIndex;
-        }
-        if (imageIndex >= 12) {
-            imageIndex = 0
-        }
-        console.log(imageIndex)
-        slideShowItems[0].src = `Images/slideShowImages/${slideNumber}.JPG`
-        setTimeout(changeSlide, 5000, imageIndex)
+        console.log(imageIndex, slideNumber)
+        slideShowItems[0].src = `Images/slideShowImages/${slideNumber}.JPG`;
+        imageIndex++;
     };
+    setInterval(changeSlide, 5000)
     changeSlide(imageIndex);
 };
