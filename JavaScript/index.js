@@ -3,7 +3,7 @@ var imageIndex = Math.floor(Math.random() * 11);
 // DDOES:
 window.addEventListener('load', function () {
     slideShow()
-})
+});
 
 // DFUNC: The slideShow function
 function slideShow() {
