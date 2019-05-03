@@ -1,6 +1,7 @@
 div#slideShow img {
-    width: 100%;
+    width: 90vw;
     height: 90vh;
+    opacity: 0.5;
 }
 
 /* Next & previous buttons */
