@@ -30,7 +30,6 @@ function slideShow() {
         } else if (imageIndex <= 9) {
             slideNumber = `0${imageIndex}`;
         }
-        console.log(imageIndex, slideNumber)
         slideShowItems[0].src = `Images/slideShowImages/${slideNumber}.JPG`;
         imageIndex++;
     };
