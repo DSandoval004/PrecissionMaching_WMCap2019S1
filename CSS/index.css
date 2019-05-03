@@ -47,7 +47,7 @@ h1#slideShowBanner {
     left: 12.5%;
 }
 
-h2 {
+section h2 {
     font-size: 4em;
     width: 100%;
 
@@ -60,12 +60,16 @@ section#about {
     overflow: auto;
 }
 
+div#footerSpacer {
+    height: 26px;
+}
+
 div.footer {
     display: flex;
     justify-content: center;
     padding: 5px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     left: 0;
     bottom: 0;
     background-color: #f59232;
