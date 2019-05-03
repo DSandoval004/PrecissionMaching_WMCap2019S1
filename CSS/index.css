@@ -31,3 +31,16 @@ div#slideShow img {
 #rightArrowSS:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+div.footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
