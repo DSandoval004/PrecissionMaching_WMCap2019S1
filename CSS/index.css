@@ -1,10 +1,16 @@
+/*
+ 
+   ___ _   _ ____  _______  __  ____ _______   ___     _____ ____  _   _ _____ _____ _____  
+  |_ _| \ | |  _ \| ____\ \/ / / ___|_   _\ \ / / |   | ____/ ___|| | | | ____| ____|_   _| 
+   | ||  \| | | | |  _|  \  /  \___ \ | |  \ V /| |   |  _| \___ \| |_| |  _| |  _|   | |   
+   | || |\  | |_| | |___ /  \   ___) || |   | | | |___| |___ ___) |  _  | |___| |___  | |   
+  |___|_| \_|____/|_____/_/\_\ |____/ |_|   |_| |_____|_____|____/|_| |_|_____|_____| |_|   
+                                                                                            
+ 
+*/
 @import 'reset.css';
 @import 'site.css';
 @import 'keyframes.css';
-
-div#navAndSlideSpacer {
-    height: 46px;
-}
 
 div#slideShow img {
     width: 90vw;
@@ -49,7 +55,7 @@ h1#slideShowBanner {
 
 section h2 {
     font-size: 4em;
-    width: 100%;
+    width: 90vw;
 
     background-color: #f59232;
     color: #fafafa;
@@ -58,22 +64,4 @@ section h2 {
 
 section#about {
     overflow: auto;
-}
-
-div#footerSpacer {
-    height: 26px;
-}
-
-div.footer {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    position: fixed;
-    width: 100vw;
-    left: 0;
-    bottom: 0;
-    background-color: #f59232;
-    color: #fafafa;
-    text-align: center;
-    order: 99;
 }
