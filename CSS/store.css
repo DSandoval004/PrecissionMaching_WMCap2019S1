@@ -15,3 +15,33 @@ h1 {
     font-size: 8em;
     color: #262626;
 }
+
+section#storeItems div {
+    position: relative;
+    border: 1px solid black;
+    width: 90%;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+section#storeItems div h3 {
+    font-size: 3em;
+    margin: 1px;
+    border: 1px solid black;
+}
+
+section#storeItems div img {
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+section#storeItems div button {
+    position: absolute;
+    height: 3em;
+    top: 2px;
+    right: 1px;
+}
