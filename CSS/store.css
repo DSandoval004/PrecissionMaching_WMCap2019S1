@@ -16,7 +16,11 @@ h1 {
     color: #262626;
 }
 
-section#storeItems div {
+form#storeItems {
+    overflow: auto;
+}
+
+form#storeItems div {
     position: relative;
     border: 1px solid black;
     width: 90%;
@@ -24,13 +28,13 @@ section#storeItems div {
     overflow: auto;
 }
 
-section#storeItems div h3 {
+form#storeItems div h3 {
     font-size: 3em;
     margin: 1px;
     border: 1px solid black;
 }
 
-section#storeItems div img {
+form#storeItems div img {
     float: left;
     margin: 5px;
     padding: 5px;
@@ -39,9 +43,53 @@ section#storeItems div img {
     max-height: 600px;
 }
 
-section#storeItems div button {
+form#storeItems div a {
     position: absolute;
     height: 3em;
+    width: 94px;
     top: 2px;
     right: 1px;
+    text-align: center;
+    line-height: 3em;
+}
+
+.button {
+    background-image: linear-gradient(#f59232, #f9c693);
+}
+
+.button:hover {
+    background-image: linear-gradient(#f9c693, #f59232);
+    cursor: pointer;
+}
+
+form#storeItems div input#itemQty {
+    font-size: 3em;
+    position: absolute;
+    top: 2px;
+    right: 396px;
+    width: 100px;
+    height: 42px;
+}
+
+form#storeItems div input#itemEngraving {
+    position: absolute;
+    top: 2px;
+    right: 94px;
+    width: 300px;
+    font-size: 3em;
+    height: 42px;
+}
+
+form#storeItems div p {
+    font-size: 1.3em;
+}
+
+input#submitButton {
+    position: relative;
+    font-size: 3em;
+    width: 20%;
+    border: none;
+    left: 75%;
+    bottom: 0;
+    margin-bottom: 10px;
 }
