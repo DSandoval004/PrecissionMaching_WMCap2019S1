@@ -18,10 +18,10 @@ function loadContent() {
         nameHTML.textContent = storeItems[i][0];
         imageHTML.src = `Images/store/${storeItems[i][0]}/${storeItems[i][1][0]}`;
         // DDOES:
-        priceHTML.type = "number";
+        priceHTML.type = "text";
         priceHTML.name = `${storeItems[i][4]}price`;
         priceHTML.id = "itemPrice";
-        priceHTML.value = storeItems[i][2];
+        priceHTML.value = `$${storeItems[i][2]}`;
         priceHTML.readOnly = "readonly"
         // DDOES:
         qtyHTML.type = "number";

@@ -62,6 +62,15 @@ form#storeItems div a {
     cursor: pointer;
 }
 
+form#storeItems div input#itemPrice {
+    font-size: 3em;
+    position: absolute;
+    top: 2px;
+    right: 500px;
+    width: 150px;
+    height: 42px;
+}
+
 form#storeItems div input#itemQty {
     font-size: 3em;
     position: absolute;
