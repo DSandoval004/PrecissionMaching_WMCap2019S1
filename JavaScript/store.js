@@ -9,6 +9,7 @@ function loadContent() {
         var itemHTML = document.createElement('div'),
             nameHTML = document.createElement('h3'),
             imageHTML = document.createElement('img'),
+            priceHTML = document.createElement('input'),
             qtyHTML = document.createElement('input'),
             engravingHTML = document.createElement('input'),
             purchaseButtonHTML = document.createElement('a'),
@@ -16,6 +17,12 @@ function loadContent() {
         // DDOES:
         nameHTML.textContent = storeItems[i][0];
         imageHTML.src = `Images/store/${storeItems[i][0]}/${storeItems[i][1][0]}`;
+        // DDOES:
+        priceHTML.type = "number";
+        priceHTML.name = `${storeItems[i][4]}price`;
+        priceHTML.id = "itemPrice";
+        priceHTML.value = storeItems[i][2];
+        priceHTML.readOnly = "readonly"
         // DDOES:
         qtyHTML.type = "number";
         qtyHTML.name = `${storeItems[i][4]}qty`;
@@ -38,6 +45,7 @@ function loadContent() {
         // DDOES:
         itemHTML.appendChild(nameHTML);
         itemHTML.appendChild(imageHTML);
+        itemHTML.appendChild(priceHTML);
         itemHTML.appendChild(qtyHTML);
         itemHTML.appendChild(engravingHTML);
         itemHTML.appendChild(purchaseButtonHTML);
