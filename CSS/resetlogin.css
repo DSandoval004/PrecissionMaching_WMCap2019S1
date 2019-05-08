@@ -5,25 +5,30 @@ body {
     background-size: cover;
 }
 
-.signup {
+a {
+    color: yellow;
+    text-decoration: blink;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin-left: 35px;
+}
+
+.reset {
     background: #f59232;
     padding: 40px;
-    width: 250px;
-    margin: auto;
-    margin-top: 80px;
+    width: 240px;
+    height: 340px;
     margin-left: 180px;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 120px;
 }
 
-form {
-    width: 240px;
-    text-align: center;
+h2 {
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
-input {
+input[type=password] {
     width: 240px;
-    text-align: center;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
@@ -32,34 +37,32 @@ input {
     font-weight: 200px;
     padding: 10px 0;
     transition: border 0.5s;
-    outline: none;
-    color: #fff;
+    text-align: center;
+    color: white;
 }
 
 input[type=button] {
     border: none;
-    width: 190px;
     background: white;
-    color: #000;
+    color: black;
     font-size: 16px;
     line-height: 25px;
     padding: 10px 0;
-    border-radius: 15px;
+    border-radius: 12px;
     cursor: pointer;
+    width: 180px;
+    margin-left: 30px;
 }
 
 input[type=button]:hover {
-    color: #fff;
-    background-color: black;
-}
-
-h2 {
-    color: #000;
+    background: black;
+    color: white;
 }
 
 ::placeholder {
     color: aliceblue;
     opacity: 0.8;
+    /* Firefox */
 }
 
 #msg {
@@ -76,7 +79,7 @@ h2 {
     transform: translateX(-50%);
     top: 30px;
     font-size: 17px;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 #msg.show {

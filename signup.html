@@ -4,8 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="../CSS/signup.css" />
+    <link rel="stylesheet" href="CSS/signup.css" />
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
+    <script>
+        function myFunction() {
+            var x = document.getElementById("msg");
+            x.className = "show";
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
 </head>
 
 <body>
@@ -18,13 +27,13 @@
             <input type="password" name="pass" placeholder="Confirm Password"><br><br>
             <input type="text" placeholder="Email address"><br><br>
             <input type="button" value="Sign up" onclick="myFunction()"><br><br>
-            <div id="msg">Congratulations You Sign Up successfully!!</div>
+            <div id="msg">Congratulations You Have Signed Up Successfully!!</div>
             Already have account?<a href="login.html"
                 style="text-decoration: none; font-family: 'Play', sans-serif; color: yellow;">&nbsp;Log In</a>
         </form>
 
     </div>
-    <script src="login.js"></script>
+
 </body>
 
 </html>
