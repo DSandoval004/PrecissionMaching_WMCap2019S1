@@ -11,27 +11,25 @@
         function myFunction() {
             var x = document.getElementById("msg");
             x.className = "show";
+
             setTimeout(function () {
                 x.className = x.className.replace("show", "");
             }, 3000);
+
         }
     </script>
+
 </head>
 
 <body>
     <div class="forget">
-
-        <form>
-
+        <form action="forget.html" method="GET">
             <h2 align="center" style="color:#fff;">Forget password</h2>
-            <h5 style="font-size:14px; color:white;">Enter email here that you used on your account. We send the
-                link in
-                your email to reset your password.</h5>
+            <h5 style="font-size:14px; color:white;">Enter your email that you used for your account.</h5>
             <input type="text" name="username" placeholder="Enter your email" /><br /><br />
-            <input type="button" value="Send" onclick="myFunction()" /><br /><br />
+            <button type="button" value="Send" onclick="myFunction()" />Send</button><br /><br />
             <a href="login.html" style="text-decoration:none;">Go back to Home page</a><br /><br />
-
-            <div id="msg">Link sent to your email successfully!!</div>
+            <div id="msg">The link has been sent to your email successfully!!!</div>
 
 
         </form>
