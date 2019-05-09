@@ -27,7 +27,7 @@ h2 {
     margin-left: 10px;
 }
 
-input[type=text] {
+input {
     width: 240px;
     background: transparent;
     border: none;
@@ -41,7 +41,7 @@ input[type=text] {
     color: white;
 }
 
-input[type=button] {
+button[type=button] {
     border: none;
     background: white;
     color: black;
@@ -54,7 +54,7 @@ input[type=button] {
     margin-left: 30px;
 }
 
-input[type=button]:hover {
+button[type=button]:hover {
     background: black;
     color: white;
 }
