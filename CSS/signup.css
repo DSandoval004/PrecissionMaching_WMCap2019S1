@@ -36,7 +36,7 @@ input {
     color: #fff;
 }
 
-input[type=button] {
+button[type=button] {
     border: none;
     width: 190px;
     background: white;
@@ -48,7 +48,7 @@ input[type=button] {
     cursor: pointer;
 }
 
-input[type=button]:hover {
+button[type=button]:hover {
     color: #fff;
     background-color: black;
 }
@@ -81,7 +81,7 @@ h2 {
 
 #msg.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fadein 0.10s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 

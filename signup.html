@@ -4,34 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="CSS/signup.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/signup.css" />
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
-    <script>
-        function myFunction() {
-            var x = document.getElementById("msg");
-            x.className = "show";
-            setTimeout(function () {
-                x.className = x.className.replace("show", "");
-            }, 3000);
-        }
-    </script>
+
 </head>
 
 <body>
     <div class="signup">
-        <form>
+        <form action="signup.html" method="GET">
             <h2 style="color: #fff;">Sign Up</h2>
             <input type="text" name="username" placeholder="First name"><br><br>
             <input type="text" name="username" placeholder="Last name"><br><br>
             <input type="password" name="pass" placeholder="Password"><br><br>
             <input type="password" name="pass" placeholder="Confirm Password"><br><br>
             <input type="text" placeholder="Email address"><br><br>
-            <input type="button" value="Sign up" onclick="myFunction()"><br><br>
-            <div id="msg">Congratulations You Have Signed Up Successfully!!</div>
+            <button type="button" value="Sign up" onclick="myFunction()">Sign Up</button><br><br>
+            <div id="msg">Congratulations You Have Signed Up Successfully!!!</div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("msg");
+                    x.className = "show";
+                    setTimeout(function () {
+                        x.className = x.className.replace("show", "");
+                    }, 3000);
+                }
+            </script>
             Already have account?<a href="login.html"
                 style="text-decoration: none; font-family: 'Play', sans-serif; color: yellow;">&nbsp;Log In</a>
         </form>
-
     </div>
 
 </body>
