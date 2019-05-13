@@ -53,11 +53,13 @@ form#storeItems div a {
     line-height: 3em;
 }
 
-.button {
+.button,
+#button {
     background-image: linear-gradient(#f59232, #f9c693);
 }
 
-.button:hover {
+.button:hover,
+#button:hover {
     background-image: linear-gradient(#f9c693, #f59232);
     cursor: pointer;
 }
