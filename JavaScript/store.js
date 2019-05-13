@@ -1,5 +1,4 @@
-// DVARG: description
-var runningCart = [];
+// DDOES:
 window.addEventListener('load', function () {
     loadContent();
 });
@@ -26,7 +25,7 @@ function loadContent() {
         priceHTML.classList = storeItems[i][4];
         priceHTML.id = "itemPrice";
         priceHTML.value = `$${storeItems[i][2]}`;
-        priceHTML.readOnly = "readonly"
+        priceHTML.readOnly = "readonly";
         // DDOES:
         qtyHTML.type = "number";
         qtyHTML.name = `${storeItems[i][4]}qty`;
@@ -34,6 +33,7 @@ function loadContent() {
         qtyHTML.id = "itemQty";
         qtyHTML.min = 0;
         qtyHTML.value = 0;
+        qtyHTML.addEventListener('click', updateTotal)
         // DDOES:
         runningCount.type = "number";
         runningCount.name = `${storeItems[i][4]}rCount`;
@@ -47,27 +47,12 @@ function loadContent() {
         engravingHTML.id = "itemEngraving";
         engravingHTML.classList = storeItems[i][4];
         engravingHTML.maxLength = 10;
-        engravingHTML.placeholder = "Engraving"
+        engravingHTML.placeholder = "Engraving";
         // DDOES:
-        purchaseButtonHTML.addEventListener('click', function (e) {
-            // DVARL: description
-            var targetedItemID = e.target.id,
-                itemInformation = document.getElementsByClassName(targetedItemID),
-                currentCount = parseFloat(document.getElementById('itemCount').value),
-                currentCost = parseFloat(document.getElementById('itemCost').value.replace('$', "")),
-                selectedItemCost = parseFloat(itemInformation[0].value.replace('$', "")),
-                selectedItemCount = parseFloat(itemInformation[1].value),
-                runCount = parseFloat(itemInformation[3].value);
-            if (selectedItemCount != 0 && selectedItemCount != runCount) {
-                document.getElementById('itemCount').value = currentCount + selectedItemCount - runCount;
-                document.getElementById('itemCost').value = `$${currentCost + (selectedItemCost * selectedItemCount) - (selectedItemCost * runCount)}`;
-                itemInformation[3].value = selectedItemCount;
-            }
-            console.log(e, targetedItemID, itemInformation, currentCount, currentCost, runCount);
-        });
+        purchaseButtonHTML.addEventListener('click', updateTotal);
         purchaseButtonHTML.innerHTML = "Update";
-        purchaseButtonHTML.className = "button";
-        purchaseButtonHTML.id = storeItems[i][4]
+        purchaseButtonHTML.className = storeItems[i][4];
+        purchaseButtonHTML.id = "button";
         descriptionHTML.textContent = storeItems[i][3];
         // DDOES:
         itemHTML.appendChild(nameHTML);
@@ -87,7 +72,7 @@ function loadContent() {
     // DDOES:
     submitButton.type = "submit";
     submitButton.id = "submitButton";
-    submitButton.value = "Checkout";
+    submitButton.value = "To Cart";
     submitButton.classList = "button";
     // DDOES:
     itemCount.type = "number";
@@ -105,4 +90,19 @@ function loadContent() {
     document.getElementById('storeItems').appendChild(submitButton);
     document.getElementById('storeItems').appendChild(itemCount);
     document.getElementById('storeItems').appendChild(cost);
+};
+// DFUNC: The updateTotal function
+function updateTotal(e) {
+    // DVARL: description
+    var targetedItemID = e.target.className,
+        itemInformation = document.getElementsByClassName(targetedItemID),
+        currentCount = parseFloat(document.getElementById('itemCount').value),
+        currentCost = parseFloat(document.getElementById('itemCost').value.replace('$', "")),
+        selectedItemCost = parseFloat(itemInformation[0].value.replace('$', "")),
+        selectedItemCount = parseFloat(itemInformation[1].value),
+        runCount = parseFloat(itemInformation[3].value),
+        itemCostValue = currentCost + (selectedItemCost * selectedItemCount) - (selectedItemCost * runCount);
+    document.getElementById('itemCount').value = currentCount + selectedItemCount - runCount;
+    document.getElementById('itemCost').value = `$${itemCostValue.toFixed(2)}`
+    itemInformation[3].value = selectedItemCount;
 };
