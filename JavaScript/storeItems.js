@@ -5,4 +5,4 @@ var storeItems = [
     [
         "Item 2", ["blankFillerImage.png", "image1", "image2", "image3"], 22.22, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium nisl velit, euismod luctus ipsum porttitor ac. Nam leo orci, lobortis dignissim leo a, vestibulum interdum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed imperdiet lacinia ex, non ornare mauris. Ut eu elit diam. Curabitur justo sem, luctus eu aliquet ut, semper ut lorem. Ut egestas pharetra dolor, sed mattis ipsum aliquet vel. Curabitur ullamcorper blandit enim, vel accumsan eros pretium quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis fringilla dictum ipsum non hendrerit. Nulla massa ex, aliquam vitae odio a, semper tempus nisi.", "ID0002"
     ],
-]
+];
