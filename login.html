@@ -3,31 +3,48 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Login Page -->
     <title>Login Page</title>
+    <!-- This links the Cascading Style Sheet to the HTML document  -->
     <link href="CSS/login.css" rel="stylesheet" type="text/css" />
+    <!-- This links the Cascading Style Sheet to a website down below  -->
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
 </head>
+<!-- Beginning of the body tag -->
 
 <body>
+    <!-- This creates the div element with a class called "signin" -->
     <div class="signin">
+        <!-- this creates the form element with a action of "cong.html" and a method of "GET" -->
         <form action="cong.html" method="GET">
+            <!-- This creates the heading 3 element that says "Welcome to Precision Machinings Log In Page"  -->
+            <h3>Welcome to Precision Machinings Log In Page</h3>
+            <!-- This creates the heading 2 element with a style of a color #fff (white) and it says "Log In" -->
             <h2 style="color:#fff;">Log In</h2>
+            <!-- This creates the input element with a type of text, a name of username, a placeholder of Username -->
             <input type="text" name="username" placeholder="Username" /><br /><br />
+            <!-- This creates the input element with a type of "password", a name of "password", and a placeholder of "Password" -->
             <input type="password" name="password" placeholder="Password" /><br /><br />
-            <a href="cong.html"><button type="submit">Log In</button><br /><br />
+            <!-- This creates the a element with a href of "cong.html" with the button element with a type of "submit" and it says "Log In" -->
+            <a href="cong.html"><button type="button">Log In</button><br /><br />
+                <!-- This creates the div element with a id called "container" -->
                 <div id="container">
+                    <!-- This creates the a element with a href of "reset.html" with a style of margin right of 0 pixels, a font size of 13 pixels, a font family of "Tahoma, Geneva, sans serif" and it says "Reset Password" -->
                     <a href="reset.html"
-                        style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset
-                        password?</a>
+                        style="margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Reset
+                        Password</a>
+                    <!-- This creates the a element with a href of "forgot.html" with a style margin left of 30 pixels, a font size of 13 pixels, a font family of "Tahoma, Geneva, sans serif" and it says "Forgot Password?"  -->
                     <a href="forget.html"
-                        style=" margin-left:30px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget
-                        password?</a>
+                        style="margin-left:30px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;">Forget
+                        Password?</a>
+                    <!-- This creates the div element that says "Don't have an account?" with a a element with a href of "signup.html" a style with a font family of "Play, sans serif" and it says "Sign Up" -->
                 </div><br /><br /><br /><br /><br /><br />
-                Don't have account?<a href="signup.html" style="font-family:'Play', sans-serif;">&nbsp;Sign Up</a>
+                Don't have an account?<a href="signup.html" style="font-family:'Play', sans-serif;">&nbsp;Sign
+                    Up</a>
 
-        </form>
-    </div>
+        </form> <!-- End of the form element -->
+    </div> <!-- End of the div element -->
 
-</body>
+</body> <!-- End of body tag -->
 
 </html>
