@@ -1,5 +1,3 @@
-"use strict";
-
 function myFunction() {
     var x = document.getElementById("msg");
     x.className = "show";
