@@ -3,37 +3,38 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Forgot Password -->
     <title>Forgot Password</title>
+    <!-- This links the Cascading Style Sheet to the HTML document -->
     <link rel="stylesheet" type="text/css" href="CSS/forget.css" />
+    <!-- This links the Cascading Style Sheet to a website down below -->
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
-    <script>
-        function myFunction() {
-            var x = document.getElementById("msg");
-            x.className = "show";
-
-            setTimeout(function () {
-                x.className = x.className.replace("show", "");
-            }, 3000);
-
-        }
-    </script>
 
 </head>
+<!-- Beginning of the body element -->
 
 <body>
+    <!-- This creates the div element with a class called "forgot" -->
     <div class="forget">
+        <!-- This creates the form element with a action called "forgot.html" and a method of "GET" -->
         <form action="forget.html" method="GET">
-            <h2 align="center" style="color:#fff;">Forget password</h2>
-            <h5 style="font-size:14px; color:white;">Enter your email that you used for your account.</h5>
+            <!-- This creates the heading 2 element with align of "center", a style of color #fff (white) and it says "Forgot Password" -->
+            <h2 align="center" style="color:#fff;">Forgot Password?</h2>
+            <!-- This creates the heading 5 element with a style of a font size of 14 pixels, and a color of white, and it says "Enter your email that you used for your account"  -->
+            <h5 style="font-size: 14px; color:white;">Enter your email that you used for your account.</h5>
+            <!-- This creates the input element with a type of "text", a name called "username", and a placeholder called "Enter your email" -->
             <input type="text" name="username" placeholder="Enter your email" /><br /><br />
+            <!-- This creates the button element with a type of "button", a value of "Send", and a onclick called "myFunction()" -->
             <button type="button" value="Send" onclick="myFunction()" />Send</button><br /><br />
-            <a href="login.html" style="text-decoration:none;">Go back to Home page</a><br /><br />
+            <!-- This creates the a element with a href of "login.html" with a style of text decoration of none, and it says "Log In Page" -->
+            <a href="login.html" style="text-decoration:none;">Log In Page</a><br /><br />
+            <!-- This creates the div element with a id called "msg" and it says "The link has been sent to your email successfully" -->
             <div id="msg">The link has been sent to your email successfully!!!</div>
 
-
-        </form>
-    </div>
+        </form> <!-- End of the form element -->
+    </div> <!-- End of the div element -->
+    <!-- This links the Javascript file to the HTML document -->
+    <script src="JavaScript/login.js"></script>
 </body>
 
 </html>

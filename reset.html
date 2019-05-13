@@ -3,34 +3,38 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Reset Password -->
     <title>Reset Password</title>
+    <!-- This links the Cascading Style Sheet to the HTML document -->
     <link rel="stylesheet" type="text/css" href="CSS/resetlogin.css" />
+    <!-- This links the Cascading Style Sheet to a website down below -->
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
-    <script>
-        function myFunction() {
-            var x = document.getElementById("msg");
-            x.className = "show";
-            setTimeout(function () {
-                x.className = x.className.replace("show", "");
-            }, 3000);
-        }
-    </script>
 </head>
+<!-- Beginning of the body element -->
 
 <body>
+    <!-- This creates the div element with a class called "reset" -->
     <div class="reset">
-
-        <form>
+        <!-- This creates the form element with a acton of "reset.html" and a method of "GET" -->
+        <form action="reset.html" method="GET">
+            <!-- This creates the heading 2 element with align of "center", a style color of #fff (white), and it says "Reset Password" -->
             <h2 align="center" style="color:#fff;">Reset password</h2>
-            <input type="password" name="username" placeholder="Old password" /><br /><br />
-            <input type="password" name="username" placeholder="New password" /><br /><br />
-            <input type="password" name="username" placeholder="Confirm new password" /><br /><br />
-            <input type="button" value="Save" onclick="myFunction()" /><br /><br />
-            <a href="login.html" style="text-decoration:none;">Go back to Home page</a><br /><br />
+            <!-- This creates the input element with a type of "password", a name called "username",  a placeholder called "Old Password" -->
+            <input type="password" name="username" placeholder="Old Password" /><br /><br />
+            <!-- This creates the input element with a type of "password", a name called "username", and a placeholder called "New Password" -->
+            <input type="password" name="username" placeholder="New Password" /><br /><br />
+            <!-- This creates the input element with a type of "password", a name called "username", ana a placeholder called "Confirm New Password" -->
+            <input type="password" name="username" placeholder="Confirm New Password" /><br /><br />
+            <!-- This creates the button element with a type of "button", a value of "Save", and a onclick called "myFunction()" and it says "Reset" -->
+            <button type="button" value="Save" onclick="myFunction()" />Reset</button><br /><br />
+            <!-- This creates the a element with a href of "login.html", a style of text decoration of none, and it says "Log In Page-->
+            <a href="login.html" style="text-decoration:none;">Log In Page</a><br /><br />
+            <!-- This creates the div element with a id called "msg" and it says "Your password has been changed successfully!!" -->
             <div id="msg">Your password has been changed successfully!!</div>
-        </form>
-    </div>
+        </form> <!-- End of the for element -->
+    </div> <!-- End of the div element -->
+    <!-- This links the Javascript file to the HTML document -->
+    <script src="JavaScript/login.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+/* This sets the body element with a font family of Tahoma, Geneva, and sans serif, a color of #fff (white), a background of a url from a folder called "Images" and a photo in that folder called "Login.jpg", and a background size of cover */
 body {
     font-family: Tahoma, Geneva, sans-serif;
     color: #fff;
@@ -5,6 +6,7 @@ body {
     background-size: cover;
 }
 
+/* This sets the a element with a color of yellow, a text decoration of blink, a font family of Tahoma, Geneva, and sans serif, and a margin left of 35 pixels */
 a {
     color: yellow;
     text-decoration: blink;
@@ -12,7 +14,8 @@ a {
     margin-left: 35px;
 }
 
-.reset {
+/* This sets the di element with a class called reset with a background of #f59232 (orange), a padding of 40 pixels, a width of 240 pixels, a height of 340 pixels, a margin left of 180 pixels, a margin of 0 and auto, and a margin top of 120 pixels  */
+div.reset {
     background: #f59232;
     padding: 40px;
     width: 240px;
@@ -22,12 +25,14 @@ a {
     margin-top: 120px;
 }
 
+/* This sets the heading 2 element with a margin top of 15 pixels and a margin left of 10 pixels */
 h2 {
     margin-top: 15px;
     margin-left: 10px;
 }
 
-input[type=password] {
+/* This sets the input element with a width of 240 pixels, a background of transparent, a border of none, a border bottom of 1 pixel solid and #fff (white), a font family of Play and sans serif, a font size of 16 pixels, a font weight of 200 pixels, a padding of 10 pixels and 0,a transition of border 0.5 seconds, a text align of center, and the color to white */
+input {
     width: 240px;
     background: transparent;
     border: none;
@@ -41,7 +46,8 @@ input[type=password] {
     color: white;
 }
 
-input[type=button] {
+/* This sets the button element with a type of button with a border of none, a background of the color white, the color black, a font size of 16 pixels, line height of 25 pixels, a padding of 10 pixels and 0, a border radius of 12 pixels, a cursor of pointer, a width of 180 pixels, and a margin left of 30 pixels */
+button[type=button] {
     border: none;
     background: white;
     color: black;
@@ -54,7 +60,7 @@ input[type=button] {
     margin-left: 30px;
 }
 
-input[type=button]:hover {
+button[type=button]:hover {
     background: black;
     color: white;
 }

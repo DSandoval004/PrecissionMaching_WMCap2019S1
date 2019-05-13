@@ -3,37 +3,43 @@
 
 <head>
     <meta charset="utf-8" />
+    <!-- Sign Up -->
     <title>Sign Up</title>
+    <!-- This links the Cascading Style Sheet to the HTML document  -->
     <link rel="stylesheet" type="text/css" href="CSS/signup.css" />
+    <!-- This links the Cascading Style Sheet to a website down below  -->
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
 
 </head>
 
 <body>
+    <!-- Beginning of the body element -->
+    <!-- This creates the div element with a class of "signup" -->
     <div class="signup">
+        <!-- This creates the form element with a action of "signup.html" and a method of "GET" -->
         <form action="signup.html" method="GET">
+            <!-- This creates the heading 2 element with a style color of #fff (white) and it says "Signup" -->
             <h2 style="color: #fff;">Sign Up</h2>
-            <input type="text" name="username" placeholder="First name"><br><br>
-            <input type="text" name="username" placeholder="Last name"><br><br>
+            <!-- This creates the input element with a type of "text", a name called "username", and a placeholder called "First Name" -->
+            <input type="text" name="username" placeholder="First Name"><br><br>
+            <!-- This creates the input element with a type of "text", a name called "username", and a placeholder called "Last Name" -->
+            <input type="text" name="username" placeholder="Last Name"><br><br>
+            <!-- This creates the input element with a type of "password", a name called "pass", and a placeholder called "Password" -->
             <input type="password" name="pass" placeholder="Password"><br><br>
+            <!-- This creates the input element with a type of "password", a name called "pass", and a placeholder called "Confirm Password" -->
             <input type="password" name="pass" placeholder="Confirm Password"><br><br>
-            <input type="text" placeholder="Email address"><br><br>
+            <!-- This creates the input element with a type of "text" and a placeholder called "Email Address" -->
+            <input type="text" placeholder="Email Address"><br><br>
+            <!-- This creates the button element with a type of "button", a value of "Sign Up", and a on click of "myFunction()" and it says "Sign Up" -->
             <button type="button" value="Sign up" onclick="myFunction()">Sign Up</button><br><br>
+            <!-- This creates the div element with a id called "msg" and it says "Congratulations You Have Signed Up Successfully". It says "Already have an account?" with a a element with a href of login.html with a style text decoration of none, a font family of "Play sans serif", and the hyper text link are the color yellow and it says "Log In" -->
             <div id="msg">Congratulations You Have Signed Up Successfully!!!</div>
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("msg");
-                    x.className = "show";
-                    setTimeout(function () {
-                        x.className = x.className.replace("show", "");
-                    }, 3000);
-                }
-            </script>
-            Already have account?<a href="login.html"
+            Already have an account?<a href="login.html"
                 style="text-decoration: none; font-family: 'Play', sans-serif; color: yellow;">&nbsp;Log In</a>
-        </form>
-    </div>
-
-</body>
+        </form> <!-- End of the form element -->
+    </div> <!-- End of the div element  -->
+    <!-- This creates the script element with a src from a folder called "Javascript" and a Javascript file called "login.js" -->
+    <script src="JavaScript/login.js"></script>
+</body> <!-- End of the body element -->
 
 </html>
