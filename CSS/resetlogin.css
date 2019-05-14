@@ -60,18 +60,21 @@ button[type=button] {
     margin-left: 30px;
 }
 
+/* This sets the button element with a type of "button" with a pseudo class of hover with a background of black and the color white */
 button[type=button]:hover {
     background: black;
     color: white;
 }
 
-::placeholder {
+/* Ths sets the input element with a pseudo class of placeholder with the color aliceblue and a opacity of 0.8 */
+input::placeholder {
     color: aliceblue;
     opacity: 0.8;
     /* Firefox */
 }
 
-#msg {
+/* This sets the div element with a id of msg with a visibility of hidden, a min width of 250 pixels, a background color of #f59232 (orange), the color #000 (black), a text align of center, a border radius of 2 pixels, a padding of 16 pixels, a position of fixed, a z index of 1, a left of 50 percent, a transform of translate X of negative 50 percent, a top of 30 pixels, a font size of 17 pixels, and a margin right of 50 pixels */
+div#msg {
     visibility: hidden;
     min-width: 250px;
     background-color: #f59232;
@@ -88,12 +91,14 @@ button[type=button]:hover {
     margin-right: 50px;
 }
 
-#msg.show {
+/* This sets the div element with a id of msg and a class of show with a visibility of visible, a webkit animation of fade in 0.5 seconds and a fade out of 0.5 seconds and 2.5 seconds with animation of fade in of 0.5 seconds and a fade out of 0.5 seconds and 2.5 seconds */
+div#msg.show {
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+/* This sets the at webkit keyframes fade in */
 @-webkit-keyframes fadein {
     from {
         top: 0;
@@ -106,6 +111,7 @@ button[type=button]:hover {
     }
 }
 
+/* This sets the keyframes of fade in */
 @keyframes fadein {
     from {
         top: 0;
@@ -118,6 +124,7 @@ button[type=button]:hover {
     }
 }
 
+/* This sets the at webkit keyframes fade out */
 @-webkit-keyframes fadeout {
     from {
         top: 30px;
@@ -130,6 +137,7 @@ button[type=button]:hover {
     }
 }
 
+/* This sets the keyframes of fade out */
 @keyframes fadeout {
     from {
         top: 30px;
