@@ -77,3 +77,49 @@ section#store img {
     width: 40%;
     float: left;
 }
+
+form {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+form div#topEmailFormLeft {
+    float: left;
+    width: 50%;
+}
+
+form div#topEmailFormRight {
+    float: left;
+    width: 50%;
+}
+
+form div#EmailFormTop {
+    clear: both;
+}
+
+form div#EmailFormTop input {
+    font-size: 3em;
+    height: 53px;
+}
+
+form input#EmailFormComment {
+    width: 75%;
+    height: 165px;
+    font-size: 1.4em;
+}
+
+.button {
+    background-image: linear-gradient(#f59232, #f9c693);
+}
+
+.button:hover {
+    background-image: linear-gradient(#f9c693, #f59232);
+    cursor: pointer;
+}
+
+form div#buttons input {
+    font-size: 3em;
+    width: 20%;
+    border: none;
+    margin-bottom: 10px;
+}
