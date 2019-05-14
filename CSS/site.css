@@ -16,8 +16,8 @@
 /* HTML and Body */
 /* This sets the HTML element with a width of 100 percent, min-height of 100 percent, and a background of #e5e5e5  */
 html {
-    width: 100vw;
-    min-height: 100%;
+    width: 100%;
+    min-height: 100vh;
     background: #e5e5e5;
 }
 
@@ -31,6 +31,7 @@ body {
     font-family: utopia-std-display, serif;
     font-weight: 400;
     font-style: normal;
+    overflow: auto;
 }
 
 /* NavBar */
@@ -91,4 +92,26 @@ ul#topNavBarUl li a:hover {
 /* This sets the a element with a class of currentPage with a background color of a dark yellow (#f7d162) */
 a.currentPage {
     background-color: #f7d162;
+}
+
+div#navSpacer {
+    height: 46px;
+}
+
+div#footerSpacer {
+    height: 26px;
+}
+
+div.footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    background-color: #f59232;
+    color: #fafafa;
+    text-align: center;
+    order: 99;
 }

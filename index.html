@@ -16,6 +16,24 @@
     <title>Precision Machining: Home</title>
     <!-- This links the index.css stylesheet -->
     <link rel="stylesheet" href="CSS/index.css" />
+    <!-- Favicon Generated with https://www.favicon-generator.org/ -->
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="Images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -33,7 +51,7 @@
             </ul>
         </nav>
     </head>
-    <div id="navAndSlideSpacer"></div>
+    <div id="navSpacer"></div>
     <div id="slideShow">
         <img alt="slideShow Image" id="slideShowIMG">
         <a id="leftArrowSS">&#10094;</a>
@@ -58,14 +76,41 @@
 
     <section id="store">
         <h2>Store</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda odio rem, ratione
-            temporibus, consequuntur consequatur nesciunt ipsa possimus fugit sapiente iusto earum, praesentium sunt
-            impedit voluptatibus unde voluptates! Accusamus.</p>
+        <a href="http://shop.meet-ed.org/store/pens-parts-and-paperweights" target="_blank">
+            <img src="Images/precisionKeychainsFlyer.png" alt="Link to store">
+        </a>
+        <p>Click on the flyer or <a href="http://shop.meet-ed.org/store/pens-parts-and-paperweights">here</a> to go to
+            the Precision Machining Store. The proceeds from the
+            store will be
+            reinvested in the program or gifted to a worthy cause. Help them learn about building a business by
+            purchasing a student
+            designed keychain. The link will take you to their website, where you can securely order. Use your work
+            location as the address and it will be brought to you.</p>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Please leave your information below for more feedback!</p>
+        <p>Have a question or comment, send us an E-mail.</p>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+            <div id="EmailFormTop">
+                <div id="topEmailFormLeft">
+                    <p>Name:</p>
+                    <input type="text" name="name" id="EmailFormName" placeholder="First and Last"><br>
+                </div>
+                <div id="topEmailFormRight">
+                    <p>E-mail:</p>
+                    <input type="text" name="mail" id="EmailFormEmail" placeholder="example@example.com"><br>
+                </div>
+            </div>
+            <div>
+                <p>Comment:</p>
+                <input type="text" name="comment" id="EmailFormComment">
+            </div>
+            <div id="buttons">
+                <input type="submit" value="Send" class="button">
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </form>
     </section>
     <div id="footerSpacer"></div>
     <footer>

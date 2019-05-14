@@ -1,9 +1,21 @@
+/*
+ 
+   ___ _   _ ____  _______  __   ____ ____ ____   
+  |_ _| \ | |  _ \| ____\ \/ /  / ___/ ___/ ___|  
+   | ||  \| | | | |  _|  \  /  | |   \___ \___ \  
+   | || |\  | |_| | |___ /  \  | |___ ___) |__) | 
+  |___|_| \_|____/|_____/_/\_\  \____|____/____/  
+                                                  
+ 
+*/
 @import 'reset.css';
 @import 'site.css';
 @import 'keyframes.css';
 
-div#navAndSlideSpacer {
-    height: 46px;
+section p {
+    font-size: 2em;
+    padding: 5px;
+    margin: 5px;
 }
 
 div#slideShow img {
@@ -49,31 +61,66 @@ h1#slideShowBanner {
 
 section h2 {
     font-size: 4em;
-    width: 100%;
+    width: 90vw;
 
     background-color: #f59232;
     color: #fafafa;
     text-indent: 1em;
 }
 
-section#about {
+section#about,
+section#store {
     overflow: auto;
 }
 
-div#footerSpacer {
-    height: 26px;
+section#store img {
+    height: 40%;
+    width: 40%;
+    float: left;
 }
 
-div.footer {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    position: fixed;
-    width: 100vw;
-    left: 0;
-    bottom: 0;
-    background-color: #f59232;
-    color: #fafafa;
-    text-align: center;
-    order: 99;
+form {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+form div#topEmailFormLeft {
+    float: left;
+    width: 50%;
+}
+
+form div#topEmailFormRight {
+    float: left;
+    width: 50%;
+}
+
+form div#EmailFormTop {
+    clear: both;
+}
+
+form div#EmailFormTop input {
+    font-size: 3em;
+    height: 53px;
+}
+
+form input#EmailFormComment {
+    width: 75%;
+    height: 165px;
+    font-size: 1.4em;
+}
+
+.button {
+    background-image: linear-gradient(#f59232, #f9c693);
+}
+
+.button:hover {
+    background-image: linear-gradient(#f9c693, #f59232);
+    cursor: pointer;
+}
+
+form div#buttons input {
+    font-size: 3em;
+    width: 20%;
+    border: none;
+    margin-bottom: 10px;
 }
