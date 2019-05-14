@@ -10,6 +10,7 @@
 */
 @import 'reset.css';
 @import 'site.css';
+@import 'storeResponsive.css';
 
 h1 {
     font-size: 7.7em;

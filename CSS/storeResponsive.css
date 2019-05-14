@@ -1,0 +1,6 @@
+@media only screen and (max-width:561px) {
+    ul#topNavBarUl li a {
+        padding: 14px 0px;
+        min-width: 90px;
+    }
+}
