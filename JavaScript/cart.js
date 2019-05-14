@@ -1,22 +1,22 @@
-// DDOES:
+// DDOES: Adds an event lustener to run a function when the page is loaded
 window.addEventListener('load', loadCartContent);
 // DFUNC: The loadCartContent function
 function loadCartContent() {
+    // DVARS: Gets the information from the URL bar
     var formData = location.search.slice(1);
     formData = formData.replace(/\+/g, " ");
     formData = decodeURIComponent(formData);
     var formFields = formData.split(/[&=]/g);
-    console.log(formFields)
-    // DLOOP: Loops through the array
+    // DLOOP: Loops through the storeItems array
     for (var i = 0; i < storeItems.length; i++) {
-        // DVARL: description
+        // DVARL: Gets the index of each item needed
         var currentItemID = storeItems[i][4],
             itemPriceIndex = formFields.indexOf(`${currentItemID}price`),
             itemQTYIndex = formFields.indexOf(`${currentItemID}qty`),
             itemEngravingIndex = formFields.indexOf(`${currentItemID}eng`);
-        // DIFDO: description
+        // DIFDO: If their is an item ordered then it display the item with its information
         if (formFields[itemQTYIndex + 1] != '0') {
-            // DVARO: 
+            // DVARL: Creates a bunch of nodes and caculates out the item price
             var itemHTML = document.createElement('div'),
                 nameHTML = document.createElement('h3'),
                 imageHTML = document.createElement('img'),
@@ -24,17 +24,17 @@ function loadCartContent() {
                 qtyHTML = document.createElement('input'),
                 engravingHTML = document.createElement('input'),
                 itemsPrice = parseFloat(formFields[itemPriceIndex + 1].replace('$', "")) * parseFloat(formFields[itemQTYIndex + 1]);
-            // DDOES:
+            // DDOES: Edits the nameHTML and imageHTML to display the correct information
             nameHTML.textContent = storeItems[i][0];
             imageHTML.src = `Images/store/${storeItems[i][0]}/${storeItems[i][1][0]}`;
-            // DDOES:
+            // DDOES: Edits the priceHTML node
             priceHTML.type = "text";
             priceHTML.name = `${storeItems[i][4]}price`;
             priceHTML.classList = storeItems[i][4];
             priceHTML.id = "itemPrice";
             priceHTML.value = `$${itemsPrice.toFixed(2)}`;
             priceHTML.readOnly = "readonly";
-            // DDOES:
+            // DDOES: Edits the qtyHTML node
             qtyHTML.type = "number";
             qtyHTML.name = `${storeItems[i][4]}qty`;
             qtyHTML.classList = storeItems[i][4];
@@ -42,7 +42,7 @@ function loadCartContent() {
             qtyHTML.min = 0;
             qtyHTML.value = formFields[itemQTYIndex + 1];
             qtyHTML.readOnly = "readonly";
-            // DDOES:
+            // DDOES: Edits the engravingHTML node
             engravingHTML.type = "text";
             engravingHTML.name = `${storeItems[i][4]}eng`;
             engravingHTML.id = "itemEngraving";
@@ -50,7 +50,7 @@ function loadCartContent() {
             engravingHTML.maxLength = 10;
             engravingHTML.value = formFields[itemEngravingIndex + 1];
             engravingHTML.readOnly = "readonly";
-            // DDOES:
+            // DDOES: appends the nodes to their respective nodes
             itemHTML.appendChild(nameHTML);
             itemHTML.appendChild(imageHTML);
             itemHTML.appendChild(priceHTML);
@@ -59,31 +59,31 @@ function loadCartContent() {
             document.getElementById('cart').appendChild(itemHTML);
         };
     };
-    // DVARA: description
+    // DVARL: Gets the information out of the formFields array and caculates values need to be applied
     var totalCountIndx = formFields.indexOf('tCount'),
         totalCostIndex = formFields.indexOf('tCost'),
         totalCostAmount = parseFloat(formFields[totalCostIndex + 1].replace('$', "")).toFixed(2),
         submitButton = document.createElement('input'),
         itemCount = document.createElement('input'),
         cost = document.createElement('input');
-    // DDOES:
+    // DDOES: Edits the submitButton node
     submitButton.type = "submit";
     submitButton.id = "submitButton";
     submitButton.value = "Checkout";
     submitButton.classList = "button";
-    // DDOES:
+    // DDOES: Edits the itemCount node
     itemCount.type = "number";
     itemCount.name = "tCount";
     itemCount.id = "itemCount";
     itemCount.value = formFields[totalCountIndx + 1];
     itemCount.readOnly = "readonly";
-    // DDOES:
+    // DDOES: Edits the cost node
     cost.type = "text";
     cost.name = "tCost";
     cost.id = "itemCost";
     cost.value = `$${totalCostAmount}`;
     cost.readOnly = "readonly";
-    // DDOES:
+    // DDOES: appends the nodes to their respective nodes
     document.getElementById('cart').appendChild(submitButton);
     document.getElementById('cart').appendChild(itemCount);
     document.getElementById('cart').appendChild(cost);
