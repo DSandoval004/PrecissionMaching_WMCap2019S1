@@ -83,7 +83,27 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Please leave your information below for more feedback!</p>
+        <p>Have a question or comment, send us an E-mail.</p>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+            <div id="EmailFormTop">
+                <div id="topEmailFormLeft">
+                    <p>Name:</p>
+                    <input type="text" name="name" id="EmailFormName" placeholder="First and Last"><br>
+                </div>
+                <div id="topEmailFormRight">
+                    <p>E-mail:</p>
+                    <input type="text" name="mail" id="EmailFormEmail" placeholder="example@example.com"><br>
+                </div>
+            </div>
+            <div>
+                <p>Comment:</p>
+                <input type="text" name="comment" id="EmailFormComment">
+            </div>
+            <div id="buttons">
+                <input type="submit" value="Send" class="button">
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </form>
     </section>
     <div id="footerSpacer"></div>
     <footer>
