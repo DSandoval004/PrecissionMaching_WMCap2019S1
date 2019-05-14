@@ -15,6 +15,7 @@
 section p {
     font-size: 2em;
     padding: 5px;
+    margin: 5px;
 }
 
 div#slideShow img {
