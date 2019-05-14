@@ -4,7 +4,6 @@ var imageIndex = Math.floor(Math.random() * 11);
 window.addEventListener('load', function () {
     slideShow()
 });
-
 // DFUNC: The slideShow function
 function slideShow() {
     // DVARL: description

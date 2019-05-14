@@ -34,7 +34,14 @@ body {
     overflow: auto;
 }
 
-/* NavBar */
+/*
+                       _                
+   _ __   __ ___   __ | |__   __ _ _ __ 
+  | '_ \ / _` \ \ / / | '_ \ / _` | '__|
+  | | | | (_| |\ V /  | |_) | (_| | |   
+  |_| |_|\__,_| \_/   |_.__/ \__,_|_|   
+                                        
+*/
 /* This sets the nav element with a id of topNavBar with a position of relative, a margin left of negative 50 view width, a margin right of negative 50 view width, min height of 46 pixels, a width of 99.47619 view width, a right of 50 percent, a left of 50 percent, and a background of orange (#f59232)  */
 nav#topNavBar {
     position: fixed;
@@ -60,6 +67,10 @@ head nav ul#topNavBarUl {
 /* This sets the listed element with a class of topNavBarItems with a float of left */
 li.topNavBarItems {
     float: left;
+}
+
+ul li.navBarFloatRight {
+    float: right;
 }
 
 /* This sets the unlisted element with a id of topNavBarUl with li and a elements with a webkit clip path of polygon of ( 75 percent, 0 percent, 100 percent, 50 percent, 75 percent, 100 percent, 0 percent, 100 percent, 25 percent, 50 percent, 0 percent, and 0 percent, with a padding of 14 and 16 pixels, a margin top of 1 pixel, a min width of 80 pixels, a display of block, a clip path of polygon (75 percent, 0 percent, 100 percent, 50 percent, 75 percent, 100 percent, 0 percent, 100 percent, 25 percent, 50 percent, 0 percent,and 0 percent, with a border radius of 1 pixel, a color of black (#262626), a font family of jaf bernina sans condensed and sans serif, a text decoration of none,a text align of center, a font style of normal, a font weight of 700, a webkit border radius of 1 pixel, moz border radius of 1 pixel, a ms border radius of 1 pixel, and finally a o border radius of 1 pixel  */

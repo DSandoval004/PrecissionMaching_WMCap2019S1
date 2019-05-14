@@ -1,0 +1,33 @@
+@media only screen and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+
+    body div#slideShow img {
+        width: 100%;
+    }
+
+    body h1#slideShowBanner {
+        font-size: 5.5em;
+        line-height: 1.5em;
+        top: 10%;
+        left: 5%;
+        z-index: 0;
+    }
+
+    body #rightArrowSS {
+        z-index: 1;
+    }
+
+    body section h2 {
+        width: 100%;
+        text-indent: .2em;
+    }
+}
+
+@media only screen and (max-width:561px) {
+    ul#topNavBarUl li a {
+        padding: 14px 0px;
+        min-width: 90px;
+    }
+}
