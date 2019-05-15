@@ -1,0 +1,37 @@
+@media only screen and (max-width:561px) {
+    ul#topNavBarUl li a {
+        padding: 14px 0px;
+        min-width: 90px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+
+    body form#storeItems div input#itemPrice,
+    body form#storeItems div input#itemQty,
+    body form#storeItems div input#itemEngraving {
+        position: static;
+    }
+
+    body form#storeItems div a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    body #itemCost,
+    body #itemCount {
+        float: none;
+    }
+
+    body input#submitButton {
+        float: none;
+        margin-left: 4.6%;
+        margin-right: 0;
+        width: auto;
+    }
+}
