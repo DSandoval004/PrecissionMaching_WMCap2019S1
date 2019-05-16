@@ -1,12 +1,13 @@
 @import 'reset.css';
 @import 'site.css';
+@import 'storeResponsive.css';
 
 h1 {
     font-size: 7.7em;
     color: #262626;
 }
 
-form#cart {
+form {
     overflow: auto;
 }
 
@@ -42,28 +43,23 @@ form#cart div img {
     cursor: pointer;
 }
 
+
 form#cart div input#itemPrice {
     font-size: 3em;
-    position: absolute;
-    top: 51px;
-    left: 30%;
     height: 42px;
+    width: 40vw;
 }
 
 form#cart div input#itemQty {
     font-size: 3em;
-    position: absolute;
-    top: 99px;
-    left: 30%;
     height: 42px;
+    width: 40vw;
 }
 
 form#cart div input#itemEngraving {
-    position: absolute;
-    top: 146px;
-    left: 30%;
     font-size: 3em;
     height: 42px;
+    width: 40vw;
 }
 
 input#submitButton {

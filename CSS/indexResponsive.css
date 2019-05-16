@@ -23,11 +23,24 @@
         width: 100%;
         text-indent: .2em;
     }
+
+    body ul#topNavBarUl li a {
+        margin-left: -27px;
+    }
+
+    body form div#EmailFormTop input {
+        font-size: 1em;
+        height: 20px;
+    }
 }
 
 @media only screen and (max-width:561px) {
     ul#topNavBarUl li a {
         padding: 14px 0px;
         min-width: 90px;
+    }
+
+    ul#topNavBarUl li a#firstItemNavBar {
+        margin-left: 0;
     }
 }
