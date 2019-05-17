@@ -43,7 +43,7 @@
         <nav id="topNavBar">
             <!-- This creates the unlisted item element with a id called "topNavBarUl" -->
             <ul id="topNavBarUl">
-                <li class="topNavBarItems"><a href="#slideShow" class="currentPage">Home</a></li>
+                <li class="topNavBarItems"><a href="#slideShow" class="currentPage" id="firstItemNavBar">Home</a></li>
                 <li class="topNavBarItems"><a href="#about">About</a></li>
                 <li class="topNavBarItems"><a href="#ctso">CTSO</a></li>
                 <li class="topNavBarItems"><a href="#store">Store</a></li>
@@ -52,34 +52,42 @@
             </ul>
         </nav>
     </head>
+    <!-- Puts a space between the navBar and the content of the page so it doesn't overlap -->
     <div id="navSpacer"></div>
+    <!-- Div that hold the content of the slide show -->
     <div id="slideShow">
         <img alt="slideShow Image" id="slideShowIMG">
         <a id="leftArrowSS">&#10094;</a>
         <a id="rightArrowSS">&#10095;</a>
         <h1 id="slideShowBanner">West-MEC </br> Precision Machining</h1>
     </div>
-
+    <!-- section for the about -->
     <section id="about">
         <h2>About</h2>
+        <!-- iframe to load a youtube video -->
         <iframe src="https://www.youtube.com/embed/mKeBpqQSWug" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="aboutVideo" align="left"
             allowfullscreen></iframe>
+        <!-- Text to example about a bit more -->
         <p>Precision Machining is a process to remove material from a work piece while holding close tolerance
             finishes. The precision machine has many types, including milling, turning and electrical discharge
             machining. A precision machine today is generally controlled using a Computer Numerical Controls (CNC).</p>
     </section>
-
+    <!-- section for the ctso -->
     <section id="ctso">
         <h2>CTSO</h2>
         <p>These are our Precision Machining CTSO Officers</p>
+        <!-- Image of the Precision Machining CTSO Officers -->
+        <img src="" alt="Precision Machining CTSO Officers">
     </section>
-
+    <!-- section for the store -->
     <section id="store">
         <h2>Store</h2>
+        <!-- Links the poster to their store -->
         <a href="http://shop.meet-ed.org/store/pens-parts-and-paperweights" target="_blank">
             <img src="Images/precisionKeychainsFlyer.png" alt="Link to store">
         </a>
+        <!-- Text explaning the store -->
         <p>Click on the flyer or <a href="http://shop.meet-ed.org/store/pens-parts-and-paperweights">here</a> to go to
             the Precision Machining Store. The proceeds from the
             store will be
@@ -88,10 +96,11 @@
             designed keychain. The link will take you to their website, where you can securely order. Use your work
             location as the address and it will be brought to you.</p>
     </section>
-
+    <!-- section for the contact -->
     <section id="contact">
         <h2>Contact</h2>
         <p>Have a question or comment, send us an E-mail.</p>
+        <!-- Form for the email so user can input it and send it -->
         <form action="mailto:example@example.com" method="post" enctype="text/plain">
             <div id="EmailFormTop">
                 <div id="topEmailFormLeft">
@@ -113,7 +122,9 @@
             </div>
         </form>
     </section>
+    <!-- Spacer so the footer doesn't overlap -->
     <div id="footerSpacer"></div>
+    <!-- This creates the footer element that says "Copyright 2019 West-Mec Precision Machining" -->
     <footer>
         <div class="footer">
             <p>&copy; Copyright 2019 West-Mec Precision Machining</p>

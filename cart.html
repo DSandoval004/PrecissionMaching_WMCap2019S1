@@ -45,7 +45,7 @@
             <!-- This creates the unordered list item with a id called "topNavBarUl" -->
             <ul id="topNavBarUl">
                 <!-- This creates the listed item with a class called "topNavBarItems" a a href of a class called "slideshow" and itsr called "Home" -->
-                <li class="topNavBarItems"><a href="index.html#slideShow">Home</a></li>
+                <li class="topNavBarItems"><a href="index.html#slideShow" id="firstItemNavBar">Home</a></li>
                 <!-- This creates the listed item with a class called "topNavBarItems" a a href of about.html called "About" -->
                 <li class="topNavBarItems"><a href="index.html#about">About</a></li>
                 <!-- This creates the listed item with a class called "topNavBarItems" a a href of ctso.html called "CTSO" -->
@@ -58,11 +58,15 @@
             </ul>
         </nav>
     </head>
+    <!-- Puts a space between the navBar and the content of the page so it doesn't overlap -->
     <div id="navSpacer"></div>
+    <!-- Heading -->
     <h1>Cart</h1>
+    <!-- Form for the javaScrit to put the dynamically created content into -->
     <form id="cart" method="GET" action="">
 
     </form>
+    <!-- Spacer so the footer doesn't overlap -->
     <div id="footerSpacer"></div>
     <!-- This creates the footer element that says "Copyright 2019 West-Mec Precision Machining" -->
     <footer>
@@ -71,7 +75,6 @@
         </div>
     </footer>
     <!-- javaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/cjs/react.development.js"></script> -->
     <script src="JavaScript/storeItems.js"></script>
     <script src="JavaScript/cart.js"></script>
 </body>

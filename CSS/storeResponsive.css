@@ -3,11 +3,19 @@
         padding: 14px 0px;
         min-width: 90px;
     }
+
+    ul#topNavBarUl li a#firstItemNavBar {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width:768px) {
     body {
         width: 100%;
+    }
+
+    body h1 {
+        font-size: 4em;
     }
 
     body form#storeItems div input#itemPrice,
@@ -18,6 +26,14 @@
 
     body form#storeItems div a {
         display: none;
+    }
+
+    body ul#topNavBarUl li a {
+        margin-left: -27px;
+    }
+
+    body ul#topNavBarUl li a {
+        margin-left: -27px;
     }
 }
 

@@ -13,12 +13,14 @@
 @import 'keyframes.css';
 @import 'indexResponsive.css';
 
+/* Changes the font size, padding of the paragraph in all section elements */
 section p {
     font-size: 2em;
     padding: 5px;
     margin: 5px;
 }
 
+/* Sets the image of the slide show to a width an height relative to the browser window, and decrese the brightness of the images */
 div#slideShow img {
     width: 90vw;
     height: 90vh;
@@ -26,6 +28,7 @@ div#slideShow img {
     -webkit-filter: brightness(75%);
 }
 
+/* The styles for the arrows on the slide show so that they look the same and pop out but not to much */
 #leftArrowSS,
 #rightArrowSS {
     cursor: pointer;
@@ -42,11 +45,13 @@ div#slideShow img {
     user-select: none;
 }
 
+/* makes it so the arrow goes on the right */
 #rightArrowSS {
     right: 5%;
     border-radius: 3px 0 0 3px;
 }
 
+/* Changes the background color when hovered over */
 #leftArrowSS:hover,
 #rightArrowSS:hover {
     background-color: rgba(0, 0, 0, 0.8);
